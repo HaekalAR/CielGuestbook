@@ -19,7 +19,7 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 # Generate key & migrate database
-RUN php artisan key:generate
+# RUN php artisan key:generate
 
 # Open port
 EXPOSE 8000
